@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NEXA — Build your own AI agent | The AI Organization</title>
+    <meta
+      name="description"
+      content="NEXA is a members-only AI organization. Register with your ID and email, build your own AI agent, and put it to work. $10 one-time, or 3,000 ETB in Ethiopia. Free accounts include 5 hours."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#07070a" />
+    <link rel="canonical" href="%PUBLIC_URL%/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NEXA" />
+    <meta property="og:title" content="NEXA — Build an intelligence that belongs to you" />
+    <meta
+      property="og:description"
+      content="Register with your ID and email, design your own AI agent, and put it to work. $10 once, or 3,000 ETB in Ethiopia. Free accounts include 5 hours."
+    />
+    <meta property="og:url" content="%PUBLIC_URL%/" />
+    <meta property="og:image" content="%PUBLIC_URL%/og-social.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="NEXA — The AI Organization" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="NEXA — Build an intelligence that belongs to you" />
+    <meta
+      name="twitter:description"
+      content="A members-only AI organization. Build your own AI agent. $10 once, or 3,000 ETB in Ethiopia. 5 hours free."
+    />
+    <meta name="twitter:image" content="%PUBLIC_URL%/og-social.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23d8ff4f'/%3E%3Cpath d='M9 23V9l14 14V9' stroke='%2307070a' stroke-width='3' fill='none' stroke-linejoin='round'/%3E%3C/svg%3E"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "%PUBLIC_URL%/#organization",
+            "name": "NEXA",
+            "url": "%PUBLIC_URL%/",
+            "logo": "%PUBLIC_URL%/og-social.png",
+            "description": "A members-only AI organization where people build and own personal AI agents.",
+            "foundingDate": "2026"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "%PUBLIC_URL%/#website",
+            "url": "%PUBLIC_URL%/",
+            "name": "NEXA — The AI Organization",
+            "publisher": { "@id": "%PUBLIC_URL%/#organization" },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "Service",
+            "name": "NEXA membership",
+            "provider": { "@id": "%PUBLIC_URL%/#organization" },
+            "description": "One-time membership that unlocks unlimited AI time and up to 25 personal AI agents.",
+            "offers": {
+              "@type": "Offer",
+              "price": "10",
+              "priceCurrency": "USD",
+              "url": "%PUBLIC_URL%/#membership"
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="toasts" class="toasts" aria-live="polite"></div>
+    <div id="modal-root"></div>
+    <noscript>
+      <main style="max-width: 720px; margin: 0 auto; padding: 64px 24px; font-family: system-ui, sans-serif; color: #f4f4f2; background: #07070a">
+        <h1 style="font-size: 42px; line-height: 1.1; margin: 0 0 16px">NEXA — The AI Organization</h1>
+        <p style="font-size: 18px; line-height: 1.6; color: #b9b9b2">
+          NEXA is a members-only AI organization. Register with your ID and email, then
+          design, name and run your own AI agent — built for your work, owned by you.
+        </p>
+        <p style="font-size: 18px; line-height: 1.6; color: #b9b9b2">
+          Free accounts include 5 hours of AI time and one agent. Membership is a
+          one-time $10, or 3,000 ETB in Ethiopia, and unlocks unlimited AI time and up
+          to 25 agents.
+        </p>
+        <p style="font-size: 16px; line-height: 1.6">
+          NEXA needs JavaScript to create an account and use the studio.
+          Enable JavaScript, then open <a href="/" style="color: #d8ff4f">%PUBLIC_URL%/</a>.
+        </p>
+      </main>
+    </noscript>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

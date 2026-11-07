@@ -1,0 +1,45 @@
+services:
+  - type: web
+    name: nexa
+    runtime: node
+    plan: starter
+    region: frankfurt
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
+      - key: NODE_ENV
+        value: production
+      - key: PAYMENTS_DEMO
+        value: "false"
+      - key: DATA_DIR
+        value: /var/data
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: AI_PROVIDER
+        value: auto
+      - key: DEEPSEEK_API_KEY
+        sync: false
+      - key: DEEPSEEK_MODEL
+        value: deepseek-chat
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-4o-mini
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: ANTHROPIC_MODEL
+        value: claude-sonnet-4-6
+      - key: PAYMENT_PROVIDER
+        value: EBIRR
+      - key: PAYMENT_ACCOUNT_NUMBER
+        value: "0958131880"
+      - key: PAYMENT_ACCOUNT_NAME
+        sync: false
+    disk:
+      name: nexa-data
+      mountPath: /var/data
+      sizeGB: 1
